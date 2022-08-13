@@ -2,6 +2,10 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #f5f7fa;
   color: #000;
+  font-size: 15px;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: normal;
 }
 
 p,
@@ -19,78 +23,32 @@ li{
 .container{
     display: flex;
     flex-direction: row-reverse;
-    width: 1200px;
+    width: 1200px; 
     background: #fff;
     margin: 40px auto;
-    box-shadow: 6px 6px 20px rgb(0 0 0 / 10%);
+    box-shadow: 6px 6px 20px rgb(0 0 0 / 10%); 
 }
 
-/* .about-me-section::after {
-     content: "";
-     display: block;
-
-     position: absolute;
-     top: 40px;
-     left: 75px;
-
-     width: 370px;
-     height: 150px;
-     border-radius: 2px;
-
-     background-color: #9c6771;
-   } */
 .main-section {
   padding: 60px 90px 100px 90px;
 }
-.about-me-description {
-  width: 400px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 1.6;
-}
-.about-me__profession{
+.about-me__profession,
+.my-education-item:first-child{
   margin-bottom: 20px;
 }
 .about-me__name{
   color:#9c6771;
-    margin-bottom: 20px;
+   margin-bottom: 20px;
 }
-.about-me__description{
+.about-me__description ,
+.my-projects-section{
   margin-bottom: 22px;
-}
-
-.my-projects-section {
-  margin-bottom: 22px;
-}
-
-.main-content-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  margin-bottom: 10px;
-}
-.my-projects__list {
-  padding: 0;
-}
-.my-projects__item {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #000;
 }
 
 .my-projects__item:not(:last-child){
   margin-bottom: 15px;
 }
-.my-projects-text {
-  font-weight: normal;
-  line-height: 24px;
-  /* color: #595959; */
-  margin-left: 5px;
-}
+
 .my-project-link {
   font-weight: bold;
   color:#9c6771;
@@ -98,22 +56,17 @@ li{
 
 .my-work-experience-section {
   padding: 0 110px 0 0;
-  margin-bottom: 50px;
- 
+  margin-bottom: 50px; 
 }
-.my-work-experience-company-list{
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
+
 .my-work-experience-company-block:not(:last-child) {
   margin-bottom: 25px;
 }
-.my-work-experience-position {
-  font-style: normal;
+.my-work-experience-position,
+.my-education {
   font-weight: bold;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   margin-bottom: 5px;
 }
 .my-work-experience-company {
@@ -121,63 +74,37 @@ padding: 0;
   margin-bottom: 5px;
 }
 .my-work-experience-period {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 15px;
   margin-bottom: 10px;
 }
 .my-work-experience-duties {
-  padding: 0 0 0 25px;
+  padding-left: 25px;
 }
 .my-work-experience-duty {
   list-style-type: disc;
   color: #b66878;
 }
 .my-work-experience-text{
-  font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
-    color:#000;
+   color:#000;
 }
 .my-work-experience-divider {
   font-weight: bold;
 }
-
 .my-education-section {
-  /* padding: 40px 0 0 0; */
   margin-bottom: 30px;
 }
-.my-education-item{
-  list-style-type: none;
-}
-.my-education-item:first-child{
-  margin-bottom: 20px;
-}
 .my-education {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
   color:#9c6771;
-  margin-bottom: 5px;
 }
 .my-education-experience-period {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 15px;
+  line-height: 1;
 }
 .my-education-program{
   margin-bottom: 8px;
 }
 .main-content-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 25px;
-  line-height: 27px;
-  color: #000;
+  line-height: 1.08;
   margin-bottom: 20px;
 }
 
@@ -196,59 +123,29 @@ padding: 0;
   margin: 40px 0 0 40px;
 }
 .sidebar-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 22px;
-  line-height: 27px;
+  line-height: 1.23;
   color: #9c6771;
-   margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-.contact-section-type {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: #fff;
-  margin-right: 7px;
-}
+
 .contact-section-link {
   color: #fff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
 }
 .contact-section-link:hover {
   color:#9c6771;
-}
-.contact-section__social-links{
-  display: flex;
-  margin-top: 5px;
-
-}
-.contact-section__social-link--svg{
-  width:30px;
-  height: 30px;
-  fill: #565e6a;
-  margin-right: 10px;
-  
-}.contact-section__social-link--svg:hover{
-  fill:#9c6771;
 }
 
 .sidebar-list {
   padding: 0 0 0 18px;
 }
 .sidebar-item {
-    list-style-type: disc;
+   list-style-type: disc;
   color: #9c6771;
 }
 
 .sidebar-item-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
   color: #fff;
 }
 
