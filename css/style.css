@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f5f7fa;
+  color: #000;
 }
 
 p,
@@ -10,6 +11,10 @@ h3,
 h4,
 ul{
   margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
 }
 .container{
     display: flex;
@@ -35,15 +40,14 @@ ul{
      background-color: #9c6771;
    } */
 .main-section {
-  padding: 100px 90px 100px 90px;
+  padding: 60px 90px 100px 90px;
 }
 .about-me-description {
   width: 400px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
+  font-size: 15px;
+  line-height: 1.6;
 }
 .about-me__profession{
   margin-bottom: 20px;
@@ -57,7 +61,7 @@ ul{
 }
 
 .my-projects-section {
-  margin-bottom: 50px;
+  margin-bottom: 22px;
 }
 
 .main-content-title {
@@ -65,43 +69,36 @@ ul{
   font-weight: bold;
   font-size: 22px;
   line-height: 27px;
-  color: #000;
   margin-bottom: 10px;
 }
-.my-projects-list {
-  padding: 0 0 0 18px;
+.my-projects__list {
+  padding: 0;
 }
 .my-projects__item {
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.6;
   color: #000;
+}
+
+.my-projects__item:not(:last-child){
+  margin-bottom: 15px;
 }
 .my-projects-text {
   font-weight: normal;
   line-height: 24px;
-  color: #595959;
+  /* color: #595959; */
   margin-left: 5px;
 }
-.my-projects-link {
-  /* font-style: normal;
-  font-weight: normal; */
-  font-size: 14px;
-  line-height: 24px;
-  color:#9c6771;
-  /* color: #595959; */
-}
-.my-projects-bracket {
-  font-style: normal;
+.my-project-link {
   font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: #000;
+  color:#9c6771;
 }
+
 .my-work-experience-section {
   padding: 0 110px 0 0;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
  
 }
 .my-work-experience-company-list{
@@ -109,40 +106,42 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 }
-.my-work-experience-company-block {
-  margin-bottom: 15px;
+.my-work-experience-company-block:not(:last-child) {
+  margin-bottom: 25px;
 }
 .my-work-experience-position {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .my-work-experience-company {
-  /* color: #FAC34D; */
   color: #b66878;
+  margin-bottom: 5px;
 }
 .my-work-experience-period {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
-  color: #a8a8a8;
   margin-bottom: 10px;
 }
 .my-work-experience-duties {
-  padding: 0 0 0 18px;
+  padding: 0 0 0 25px;
 }
 .my-work-experience-duty {
+  list-style-type: disc;
+  color: #b66878;
+}
+.my-work-experience-text{
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color:#000;
 }
 .my-work-experience-divider {
-  color: #000;
   font-weight: bold;
 }
 
@@ -150,36 +149,36 @@ padding: 0;
   /* padding: 40px 0 0 0; */
   margin-bottom: 30px;
 }
-/* .my-additional-education-section{
-  padding: 40px 0 0 0;
-
-} */
+.my-education-item{
+  list-style-type: none;
+}
+.my-education-item:first-child{
+  margin-bottom: 20px;
+}
 .my-education {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   color:#9c6771;
-    /* color:#fb6d3a; */
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .my-education-experience-period {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 15px;
-  color: #a8a8a8;
 }
 .my-education-program{
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .main-content-title {
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 27px;
   color: #000;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* sidebar */
@@ -194,15 +193,15 @@ padding: 0;
 .soft-skills-section,
 .languages-section,
 .methodology-section {
-  margin: 50px 0 0 40px;
+  margin: 40px 0 0 40px;
 }
 .sidebar-title {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
   line-height: 27px;
-  color: #fff;
-  margin-bottom: 10px;
+  color: #9c6771;
+   margin-bottom: 10px;
 }
 .contact-section-type {
   font-style: normal;
@@ -213,7 +212,7 @@ padding: 0;
   margin-right: 7px;
 }
 .contact-section-link {
-  color: #565e6a;
+  color: #fff;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -221,7 +220,6 @@ padding: 0;
 }
 .contact-section-link:hover {
   color:#9c6771;
-    /* color: #fb6d3a; */
 }
 .contact-section__social-links{
   display: flex;
@@ -236,15 +234,14 @@ padding: 0;
   
 }.contact-section__social-link--svg:hover{
   fill:#9c6771;
-    /* fill: #fb6d3a; */
 }
 
 .sidebar-list {
   padding: 0 0 0 18px;
 }
 .sidebar-item {
+    list-style-type: disc;
   color: #9c6771;
-  /* color: #fb6d3a; */
 }
 
 .sidebar-item-text {
@@ -255,6 +252,3 @@ padding: 0;
   color: #fff;
 }
 
-/* img{
-  border-radius: 50%;
-} */
