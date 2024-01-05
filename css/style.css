@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f5f7fa;
+  /* background-color: #f5f7fa; */
+      background: #fff;
   color: #000;
   font-size: 15px;
   line-height: 1.6;
@@ -24,9 +25,9 @@ li{
     display: flex;
     flex-direction: row-reverse;
     width: 1200px; 
-    background: #fff;
-    margin: 40px auto;
-    box-shadow: 6px 6px 20px rgb(0 0 0 / 10%); 
+    /* background: #fff; */
+    /* margin: 40px auto; */
+    /* box-shadow: 6px 6px 20px rgb(0 0 0 / 10%);  */
 }
 
 .main-section {
@@ -44,15 +45,29 @@ li{
 .my-projects-section{
   margin-bottom: 22px;
 }
-
-.my-projects__item:not(:last-child){
-  margin-bottom: 15px;
+.my-projects__list{
+  padding-left: 25px;
 }
-
+.my-projects-title{
+  font-size: 14px;
+  margin-top: 15px;
+}
+.my-projects__item{
+  list-style-type: disc;
+    color: #b66878;
+   
+}
+.my-projects__item:not(:last-child){
+  margin-bottom: 10px;
+}
+.my-project-text {
+  color: #000;
+}
 .my-project-link {
   font-weight: bold;
   color:#9c6771;
 }
+
 
 .my-work-experience-section {
   padding: 0 110px 0 0;
